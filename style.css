@@ -6,18 +6,17 @@
 }
 
 header {
-    background-color: #0d76c1;
+    align-items: center;
+    background-image: url(img/cab11.jpg);
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 
-header img {
-    justify-content: center;
-    width: 20rem;
-    height: 20rem;
-
+header img{
+    margin: 4rem;
+    width: 4rem;
+    height: 4rem
 }
 
 header h2 {
@@ -101,7 +100,7 @@ header h2 {
 }
 
 
-.contenedor .contenedor-items {
+.contenedor .ropaTienda {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -111,7 +110,7 @@ header h2 {
     transition: .3s;
 }
 
-.contenedor .contenedor-items .item {
+.contenedor .ropaTienda .item {
     max-width: 200px;
     margin: auto;
     border: 1px solid #666;
@@ -120,30 +119,29 @@ header h2 {
     transition: .3s;
 }
 
-.contenedor .contenedor-items .item .img-item {
+.contenedor .ropaTienda .item .img-item {
     width: 100%;
 }
 
-.contenedor .contenedor-items .item:hover {
+.contenedor .ropaTienda .item:hover {
     box-shadow: 3px 3px 10px #0d76c1;
     scale: 1.05;
 }
 
-.contenedor .contenedor-items .item .titulo-item {
+.contenedor .ropaTienda .item .titulo-item {
     display: block;
-    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
 
-.contenedor .contenedor-items .item .precio-item {
+.contenedor .ropaTienda .item .precio-item {
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
 }
 
-.contenedor .contenedor-items .item .boton-item {
+.contenedor .ropaTienda .item .boton-item {
     display: block;
     margin: 10px auto;
     border: none;
@@ -285,6 +283,7 @@ header h2 {
     color: #0d76c1;
     background-color: black;
 }
+
 
 footer {
 display: flex;

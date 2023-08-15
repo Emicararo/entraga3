@@ -7,13 +7,13 @@ if (confirmacion === "SI") {
         constructor() {
             this.carritoVisible = false;
             if (document.readyState == 'loading') {
-                document.addEventListener('DOMContentLoaded', () => this.ready());
+                document.addEventListener('DOMContentLoaded', () => this.ejecutar());
             } else {
-                this.ready();
+                this.ejecutar();
             }
         }
 
-        ready() {
+        ejecutar() {
             const botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
             for (let i = 0; i < botonesEliminarItem.length; i++) {
                 const button = botonesEliminarItem[i];
@@ -38,10 +38,10 @@ if (confirmacion === "SI") {
                 button.addEventListener('click', () => this.agregarAlCarritoClicked(button));
             }
 
-            document.getElementsByClassName('btn-pagar')[0].addEventListener('click', () => this.pagarClicked());
+            document.getElementsByClassName('btn-pagar')[0].addEventListener('click', () => this.pagarCompra());
         }
 
-        pagarClicked() {
+        pagarCompra() {
             alert("Gracias por la compra");
             const carritoItems = document.getElementsByClassName('carrito-items')[0];
             while (carritoItems.hasChildNodes()) {
@@ -65,7 +65,7 @@ if (confirmacion === "SI") {
             const carrito = document.getElementsByClassName('carrito')[0];
             carrito.style.marginRight = '0';
             carrito.style.opacity = '1';
-            const items = document.getElementsByClassName('contenedor-items')[0];
+            const items = document.getElementsByClassName('ropaTienda')[0];
             items.style.width = '60%';
         }
 
@@ -144,7 +144,7 @@ if (confirmacion === "SI") {
                 carrito.style.marginRight = '-100%';
                 carrito.style.opacity = '0';
                 this.carritoVisible = false;
-                const items = document.getElementsByClassName('contenedor-items')[0];
+                const items = document.getElementsByClassName('ropaTienda')[0];
                 items.style.width = '100%';
             }
         }
