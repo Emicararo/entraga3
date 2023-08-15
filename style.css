@@ -286,24 +286,6 @@ header h2 {
     background-color: black;
 }
 
-
-
-/* MOVIL Y TABLET */
-
-@media screen and (max-width: 600px) {
-    .contenedor {
-        display: block;
-    }
-
-    .contenedor-items {
-        width: 100% !important;
-    }
-
-    .carrito {
-        width: 100%;
-    }
-}
-
 footer {
 display: flex;
 flex-direction: column;
