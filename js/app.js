@@ -54,20 +54,23 @@ if (confirmacion === "SI") {
             const titulo = item.getElementsByClassName('titulo-item')[0].innerText;
             const precio = item.getElementsByClassName('precio-item')[0].innerText;
             const imagenSrc = item.getElementsByClassName('img-item')[0].src;
-            this.agregarItemAlCarrito(titulo, precio, imagenSrc);
+
+            // Crear un nuevo elemento select con las opciones de talle
+            const selectTalle = document.createElement('select');
+            selectTalle.innerHTML = `
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            `;
+
+            // Agregar el producto y el selector de talle al carrito
+            this.agregarItemAlCarrito(titulo, precio, imagenSrc, selectTalle);
             this.hacerVisibleCarrito();
         }
 
-        hacerVisibleCarrito() {
-            this.carritoVisible = true;
-            const carrito = document.getElementsByClassName('carrito')[0];
-            carrito.style.marginRight = '0';
-            carrito.style.opacity = '1';
-            const items = document.getElementsByClassName('ropaTienda')[0];
-            items.style.width = '60%';
-        }
-
-        agregarItemAlCarrito(titulo, precio, imagenSrc) {
+        agregarItemAlCarrito(titulo, precio, imagenSrc, selectTalle) {
             const item = document.createElement('div');
             item.classList.add('item');
             const itemsCarrito = document.getElementsByClassName('carrito-items')[0];
@@ -97,6 +100,7 @@ if (confirmacion === "SI") {
                     </button>
                 </div>
             `;
+
             item.innerHTML = itemCarritoContenido;
             itemsCarrito.append(item);
 
@@ -107,6 +111,10 @@ if (confirmacion === "SI") {
 
             const botonSumarCantidad = item.getElementsByClassName('sumar-cantidad')[0];
             botonSumarCantidad.addEventListener('click', () => this.sumarCantidad(item));
+
+            // Agregar el selector de talle al elemento de detalles del carrito
+            const detallesCarrito = item.getElementsByClassName('carrito-item-detalles')[0];
+            detallesCarrito.appendChild(selectTalle);
 
             this.actualizarTotalCarrito();
         }
@@ -168,9 +176,18 @@ if (confirmacion === "SI") {
             const totalCarritoElemento = document.getElementsByClassName('carrito-precio-total')[0];
             totalCarritoElemento.innerText = '$' + total.toFixed(2) + '0';
         }
+
+        hacerVisibleCarrito() {
+            this.carritoVisible = true;
+            const carrito = document.getElementsByClassName('carrito')[0];
+            carrito.style.marginRight = '0';
+            carrito.style.opacity = '1';
+            const items = document.getElementsByClassName('ropaTienda')[0];
+            items.style.width = '60%';
+        }
     }
 
     const carrito = new Carrito();
 } else {
-    alert("Debes ser socio para comprar en esta seccion");
+    alert("Debes ser socio para comprar en esta sección");
 }
