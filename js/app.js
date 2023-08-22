@@ -1,5 +1,3 @@
-
-
 const confirmacion = prompt("Sos Socio del Club Atletico Belgrano? SI/NO").toUpperCase();
 
 if (confirmacion === "SI") {
