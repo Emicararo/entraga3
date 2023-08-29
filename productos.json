@@ -1,58 +1,50 @@
 [
     {
-        "id": 1,
-        "nombre": "Algodón Remera Campeón",
-        "imagenSrc": "../img/cab0.webp",
-        "precio": 11000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Algodon Remera Campeon",
+      "imagen": "img/cab0.webp",
+      "precio": 11000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 2,
-        "nombre": "Algodón Remera Errea",
-        "imagenSrc": "../img/cab1.webp",
-        "precio": 11000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Algodon Remera Errea",
+      "imagen": "img/cab1.webp",
+      "precio": 11000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 3,
-        "nombre": "Remera Viaje Belgrano",
-        "imagenSrc": "../img/cab2.webp",
-        "precio": 17000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Remera viaje Belgrano",
+      "imagen": "img/cab2.webp",
+      "precio": 17000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 4,
-        "nombre": "Titular Arquero Errea 2023",
-        "imagenSrc": "../img/cab3.webp",
-        "precio": 23000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Titular Arquero Errea 2023",
+      "imagen": "img/cab3.webp",
+      "precio": 23000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 5,
-        "nombre": "Suplente Arquero Errea 2023",
-        "imagenSrc": "../img/cab4.webp",
-        "precio": 23000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Suplente Arquero Errea 2023",
+      "imagen": "img/cab4.webp",
+      "precio": 23000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 6,
-        "nombre": "Entrenamiento Belgrano",
-        "imagenSrc": "../img/cab5.webp",
-        "precio": 19000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Entrenamiento Belgrano",
+      "imagen": "img/cab5.webp",
+      "precio": 19000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 7,
-        "nombre": "Titular Errea 2023",
-        "imagenSrc": "../img/cab6.webp",
-        "precio": 18000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Titular Errea 2023",
+      "imagen": "img/cab6.webp",
+      "precio": 18000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     },
     {
-        "id": 8,
-        "nombre": "Jogging Errea Entrenamiento",
-        "imagenSrc": "../img/cab7.webp",
-        "precio": 17000,
-        "tallas": ["S", "M", "L", "XL", "XXL"]
+      "nombre": "Joggin Errea Entrenamiento",
+      "imagen": "img/cab7.webp",
+      "precio": 17000,
+      "talles": ["S", "M", "L", "XL", "XXL"]
     }
-]
+  ]
